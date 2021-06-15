@@ -32,7 +32,7 @@ public class MainAplikasiKasir {
         
         //        Mulai Transaksi
         System.out.println("============ TRANSAKSI ============");
-
+        do {
         //Ambil data Transaksi
         System.out.print("No Transaksi : ");
         no_transaksi = input.next();
@@ -147,6 +147,10 @@ public class MainAplikasiKasir {
                 break;
             }
         } while (kembalian < 0);
+        
+            System.out.println("Lakukan Transaksi Lagi? [Y/])");
+            transaksi_lagi = input.next();
+        } while (transaksi_lagi.equalsIgnoreCase("Y"));
         
         System.out.println("============ TERIMA KASIH ============");
     }
