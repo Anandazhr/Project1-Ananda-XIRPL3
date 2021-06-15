@@ -37,4 +37,12 @@ public class Menu {
     public void setKategori(String kategori) {
         this.kategori = kategori;
     }
+
+    String getNamaMenu() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getNama_Menu() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
