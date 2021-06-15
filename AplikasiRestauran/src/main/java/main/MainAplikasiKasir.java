@@ -6,6 +6,7 @@
 package main;
 
 import classes.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -28,8 +29,25 @@ public class MainAplikasiKasir {
         
         MainAplikasiKasir application = new MainAplikasiKasir();
         application.generateDaftarMenu();
+        
+        //        Mulai Transaksi
+        System.out.println("============ TRANSAKSI ============");
+
+        //Ambil data Transaksi
+        System.out.print("No Transaksi : ");
+        no_transaksi = input.next();
+        System.out.print("Pemesan : ");
+        nama_pemesan = input.next();
+        System.out.print("Tanggal : [dd-mm-yyyy] \t");
+        tanggal = input.next();
+        System.out.print("Makan ditempat? [Y/N]");
+        makan_ditempat = input.next();
+            
+        if (makan_ditempat.equalsIgnoreCase("Y")) {
+            System.out.print("Nomor Meja : ");
+            no_meja = input.next();
+        }
     }
-    
     
     public void generateDaftarMenu() {
         DaftarMenu daftarMenu = new DaftarMenu();
